@@ -10,4 +10,6 @@ tags:
 
 > This is official blog theme.
 
-My content.
+# Hi there
+
+# %% This is _post page %%
