@@ -1,42 +1,40 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
+name: Build app and deploy to aliyun
 on:
+  #监听push操作
   push:
     branches:
+      # main分支，你也可以改成其他分支
       - main
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      #- uses: actions/checkout@v2
-
-      #- name: Use Node.js 
-      #  uses: actions/setup-node@v1
-        
-      #- name: Install dependencies  # 第二步，安装依赖
-      #  run: npm install
-        
-      #- name: Build              # 第三步，打包代码
-      #  run: npm run docs:build
-      - name: deploy server   # 第五步，重启服务
-        uses: appleboy/ssh-action@master
+      # 获取源码
+      - name: Checkout
+        # 使用action库  actions/checkout获取源码
+        uses: actions/checkout@master
+      # 安装Node13
+      - name: use Node.js 15.4.0
+        # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v1
         with:
-          host: ${{ secrets.SSH_HOST }}  # 下面三个配置与上一步类似
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.ACCESS_TOKEN }}
-          # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
-          script: |
-            cd /usr/local/blog/
-            git pull origin main
-            bash deploy.sh
-      
+          node-version: 15.4.0
+      # 安装依赖
+      - name: npm install
+        run: npm install
+      # 打包
+      - name: npm build
+        run: npm run build
+      # 部署到阿里云
+      - name: Deploy to Server # 第二步，rsync推文件
+        uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
+        env:
+          DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }} # 引用配置，SSH私钥
+          ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
+          SERVER_PORT: "22" # SSH端口
+          FOLDER: ./docs/.vuepress/dist # 要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
+          SERVER_IP: ${{ secrets.SSH_HOST }} # 引用配置，服务器的host名（IP或者域名domain.com）
+          USERNAME: root # 引用配置，服务器登录名
+          SERVER_DESTINATION: /usr/local/www/ # 部署到目标文件夹
+
