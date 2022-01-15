@@ -10,34 +10,14 @@ jobs:
     # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
     runs-on: ubuntu-latest
     steps:
-      # 获取源码
-      - name: Checkout
-        # 使用action库  actions/checkout获取源码
-        uses: actions/checkout@master
-      # 安装Node13
-      - name: use Node.js 15.4.0
-        # 使用action库  actions/setup-node安装node
-        uses: actions/setup-node@v1
+      - name: Deploy
+        uses: appleboy/ssh-action@master # 使用ssh链接服务器
         with:
-          node-version: 15.4.0
-      # 安装依赖
-      - name: npm install
-        run: npm install
-        
-      - name: vuepress install
-        run: npm install -g vuepress
-      # 打包
-      - name: npm build
-        run: npm run docs:build
-      # 部署到阿里云
-      - name: Deploy to Server # 第二步，rsync推文件
-        uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
-        env:
-          DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }} # 引用配置，SSH私钥
-          ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
-          SERVER_PORT: "22" # SSH端口
-          FOLDER: ./docs/.vuepress/dist # 要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
-          SERVER_IP: ${{ secrets.SSH_HOST }} # 引用配置，服务器的host名（IP或者域名domain.com）
-          USERNAME: root # 引用配置，服务器登录名
-          SERVER_DESTINATION: /usr/local/www/ # 部署到目标文件夹
-
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: | # 执行命令（运行到服务器）cd：要确保服务器有这个目录； wget：下载上一步的release到服务器； tar：解压； 安装依赖；启动服务
+            cd /usr/local/blog/
+            git pull
+            bash deploy.sh
