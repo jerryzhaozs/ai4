@@ -21,5 +21,6 @@ jobs:
             git config --global --unset http.proxy
             git config --global --unset https.proxy
             cd /usr/local/blog/
-            git pull origin main
+            git@github.com:jerryzhaozs/ai4.git
+            cd /usr/local/blog/ai4/
             bash deploy.sh
