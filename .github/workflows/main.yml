@@ -23,8 +23,9 @@ jobs:
       # 安装依赖
       - name: npm install
         run: npm install
+        
       - name: vuepress install
-        run: vuepress install
+        run: npm install -g vuepress
       # 打包
       - name: npm build
         run: npm run docs:build
