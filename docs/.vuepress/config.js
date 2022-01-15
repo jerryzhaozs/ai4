@@ -14,7 +14,7 @@ module.exports = {
       {text: 'Guide', link: '/guide/'},
       {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
     ],
-    sidebar: 'auto', // 侧边栏配置
+    // sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2, // 侧边栏显示2级
     displayAllHeaders: true
   }
