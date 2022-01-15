@@ -10,9 +10,9 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: '前端基础', link: '/accumulate/' },
+      {text: 'Post', link: '/_post/' },
       {text: 'Guide', link: '/guide/'},
-      {text: 'Baidu', link: 'https://baidu.com'}      
+      {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
     ],
     sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2, // 侧边栏显示2级
