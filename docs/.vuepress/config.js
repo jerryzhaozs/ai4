@@ -10,8 +10,10 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: '_Post', link: '/_post/' },
-      {text: 'Guide', link: '/guide/'},
+      {text: '领域数据', link: '/adata/' },
+      {text: '数据分析', link: '/anls/'},
+      {text: '软件资源', link: '/sres/'},
+      {text: '网站导航', link: '/guide/'},
       {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
     ],
     // sidebar: 'auto', // 侧边栏配置
@@ -20,13 +22,26 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: '介绍',   		 // 必要的 GROUP1
+          title: '导航',   		 // 必要的 GROUP1
           path: '/guide/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: false,   // 可选的, 默认值是 true,
           sidebarDepth: 2,      // 可选的, 默认值是 1
           children: [
           //['', '快速了解'],      	/* /guide/ */
           ['guide2', '快速入门']
+          ],
+          initialOpenGroupIndex: 1
+        }
+      ],
+      '/adata/': [
+        {
+          title: '数据',   		 // 必要的 GROUP1
+          path: '/adata/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: false,   // 可选的, 默认值是 true,
+          sidebarDepth: 2,      // 可选的, 默认值是 1
+          children: [
+          //['', '快速了解'],      	/* /guide/ */
+          //['guide2', '快速入门']
           ],
           initialOpenGroupIndex: 1
         }

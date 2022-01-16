@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /.vuepress/public/assets/img/logo.png
+heroImage: /hero.png
 heroText: AI4AGR
 tagline: AI for agriculture
 actionText: Guide →
