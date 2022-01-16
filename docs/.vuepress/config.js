@@ -10,12 +10,26 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: 'Post', link: '/_post/' },
+      {text: 'Area Data', link: '/_post/' },
       {text: 'Guide', link: '/guide/'},
       {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
     ],
     // sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2, // 侧边栏显示2级
     displayAllHeaders: true
+  },
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+      title: 'AI4AGR',
+      description: 'aiforagriculture'
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: 'AI4AGR',
+      description: '农业人工智能'
+    }
   }
 };
