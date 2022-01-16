@@ -2,21 +2,54 @@ module.exports = {
   title: 'AI4AGR',
   description: 'AI4AGR',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: '/assets/img/logo.png' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
-  base: '/', // 这是部署到github相关的配置
+  base: './', // 这是部署到github相关的配置
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: 'Area Data', link: '/_post/' },
+      {text: '_Post', link: '/_post/' },
       {text: 'Guide', link: '/guide/'},
       {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
     ],
     // sidebar: 'auto', // 侧边栏配置
-    sidebarDepth: 2, // 侧边栏显示2级
-    displayAllHeaders: true
+    //sidebarDepth: 2, // 侧边栏显示2级
+    //displayAllHeaders: true,
+    sidebar: {
+      '/guide/': [
+        {
+          title: '介绍',   		 // 必要的 GROUP1
+          path: '/guide/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: false,   // 可选的, 默认值是 true,
+          sidebarDepth: 2,      // 可选的, 默认值是 1
+          children: [
+          //['', '快速了解'],      	/* /guide/ */
+          ['guide2', '快速入门']
+          ],
+          initialOpenGroupIndex: 1
+        }
+      ],
+      '/_post/': [
+        {
+          title: '介绍',   		 // 必要的 GROUP1
+          path: '/_post/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: false,   // 可选的, 默认值是 true,
+          sidebarDepth: 2,      // 可选的, 默认值是 1
+          children: [
+          //['', '_post'],      	/* /guide/ */
+          ['haha', 'haha'], /* /guide/fastIn.html */
+          ['jumpwa', 'jumpwa']
+          ],
+          initialOpenGroupIndex: 1
+        }
+      ],
+      // fallback
+      '/': [
+      '',   /* / */
+      ]
+    }
   },
   locales: {
     // 键名是该语言所属的子路径
