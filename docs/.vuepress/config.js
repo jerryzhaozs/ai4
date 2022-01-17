@@ -6,16 +6,34 @@ module.exports = {
   ],
   base: '/', // 这是部署到github相关的配置
   markdown: {
-    lineNumbers: true // 代码块显示行号
+    lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
+    repo: 'https://github.com/jerryzhaozs',
+    repoLabel: 'Github',
     nav:[ // 导航栏配置
+      {text: '首页', link: '/' },
       {text: '领域数据', link: '/adata/' },
       {text: '数据分析', link: '/anls/'},
       {text: '软件资源', link: '/sres/'},
-      {text: '网站导航', link: '/guide/'},
-      {text: 'Github', link: 'https://github.com/jerryzhaozs'}      
+      {text: '网站导航', link: '/guide/'}
     ],
+    // nav:{
+    //   '/zh/':[
+    //       {text: '首页', link: '/' },
+    //       {text: '领域数据', link: '/adata/' },
+    //       {text: '数据分析', link: '/anls/'},
+    //       {text: '软件资源', link: '/sres/'},
+    //       {text: '网站导航', link: '/guide/'},
+    //   ], 
+    //   '/':[
+    //     {text: 'HOME', link: '/' },
+    //     {text: 'Area Data', link: '/adata/' },
+    //     {text: 'Analysis', link: '/anls/'},
+    //     {text: 'Software Resource', link: '/sres/'},
+    //     {text: 'Guide', link: '/guide/'},
+    //   ]
+    // },
     // sidebar: 'auto', // 侧边栏配置
     //sidebarDepth: 2, // 侧边栏显示2级
     //displayAllHeaders: true,
