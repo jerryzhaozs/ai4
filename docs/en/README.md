@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
-heroText: 这里是中文首页
+heroText: This is English Hemo
 tagline: Hero 副标题
 actionText: 快速上手 →
 actionLink: /zh/guide/

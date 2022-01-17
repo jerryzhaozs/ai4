@@ -11,32 +11,26 @@ module.exports = {
   themeConfig: {
     repo: 'https://github.com/jerryzhaozs/ai4',
     repoLabel: 'Github',
-    nav:[ // 导航栏配置
-      {text: '首页', link: '/' },
-      {text: '领域数据', link: '/adata/' },
-      {text: '数据分析', link: '/anls/'},
-      {text: '软件资源', link: '/sres/'},
-      {text: '网站导航', link: '/guide/'}
-    ],
-    // nav:{
-    //   '/zh/':[
-    //       {text: '首页', link: '/' },
-    //       {text: '领域数据', link: '/adata/' },
-    //       {text: '数据分析', link: '/anls/'},
-    //       {text: '软件资源', link: '/sres/'},
-    //       {text: '网站导航', link: '/guide/'},
-    //   ], 
-    //   '/':[
-    //     {text: 'HOME', link: '/' },
-    //     {text: 'Area Data', link: '/adata/' },
-    //     {text: 'Analysis', link: '/anls/'},
-    //     {text: 'Software Resource', link: '/sres/'},
-    //     {text: 'Guide', link: '/guide/'},
-    //   ]
-    // },
+    //nav:require("./config/nav.js"),
     // sidebar: 'auto', // 侧边栏配置
     //sidebarDepth: 2, // 侧边栏显示2级
     //displayAllHeaders: true,
+    locales: {
+      // 键名是该语言所属的子路径
+      // 作为特例，默认语言可以使用 '/' 作为其路径。
+      '/en/': {
+        lang: 'en-US',
+        title: 'AI4AGR',
+        description: 'ai4agr',
+        nav:require("./config/nav_en.js"),
+      },
+      '/': {
+        lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+        title: 'AI4AGR',
+        description: '农业人工智能',
+        nav:require("./config/nav.js"),
+      },
+    },
     sidebar: {
       '/guide/': [
         {
@@ -87,12 +81,12 @@ module.exports = {
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
-    '/': {
+    '/en/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
       title: 'AI4AGR',
-      description: 'aiforagriculture'
+      description: 'ai for agriculture'
     },
-    '/zh/': {
+    '/': {
       lang: 'zh-CN',
       title: 'AI4AGR',
       description: '农业人工智能'
