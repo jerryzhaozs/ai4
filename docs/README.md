@@ -12,5 +12,11 @@ features:
   details: AI研究方法过程和成果，探索AI在农业方面的应用
 - title: 软件资源
   details: 汇总软件等资源
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: <footer>
+           <a href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a>
+        </footer>
 ---
+
+  <footer>
+    <a href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a>
+  </footer>

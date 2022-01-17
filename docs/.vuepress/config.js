@@ -1,4 +1,5 @@
 module.exports = {
+  //theme: path.resolve(__dirname, './theme'),
   title: 'AI4AGR',
   description: 'AI4AGR',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
@@ -15,6 +16,7 @@ module.exports = {
     // sidebar: 'auto', // 侧边栏配置
     //sidebarDepth: 2, // 侧边栏显示2级
     //displayAllHeaders: true,
+    
     locales: {
       // 键名是该语言所属的子路径
       // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -82,11 +84,13 @@ module.exports = {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/en/': {
+      selectLanguageName: 'English',
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
       title: 'AI4AGR',
       description: 'ai for agriculture'
     },
     '/': {
+      selectLanguageName: '简体中文',
       lang: 'zh-CN',
       title: 'AI4AGR',
       description: '农业人工智能'
