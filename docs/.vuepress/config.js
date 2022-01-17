@@ -9,7 +9,7 @@ module.exports = {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
-    repo: 'https://github.com/jerryzhaozs',
+    repo: 'https://github.com/jerryzhaozs/ai4',
     repoLabel: 'Github',
     nav:[ // 导航栏配置
       {text: '首页', link: '/' },
