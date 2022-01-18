@@ -38,7 +38,6 @@
       </template>
       <template #bottom>
         <slot name="page-bottom" />
-        <a href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a>
       </template>
     </Page>
   </div>
