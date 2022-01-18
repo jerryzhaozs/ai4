@@ -10,3 +10,5 @@ sidebar: false
 ### [数据分析](http://www.ai4agr.com/)
 
 ### [软件资源](http://www.ai4agr.com/)
+
+<Vssue />
