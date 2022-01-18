@@ -1,4 +1,5 @@
 module.exports = {
+  //theme: 'antdocs',
   //theme: path.resolve(__dirname, './theme'),
   title: 'AI4AGR',
   description: 'AI4AGR',
@@ -95,5 +96,18 @@ module.exports = {
       title: 'AI4AGR',
       description: '农业人工智能'
     }
-  }
+  },
+  plugins: {
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+
+      // 其他的 Vssue 配置
+      owner: 'jerryzhaozs',
+      repo: 'ai4',
+      clientId: '45531d5ed2dd99f56095',
+      clientSecret: '99338c5c339cb7c7ba891e181e02b61878d1e1ee',
+      autoCreateIssue: true,
+    },
+  },
 };
