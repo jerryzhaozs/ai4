@@ -1,7 +1,7 @@
 module.exports=[
-    {text: 'Home', link: '/' },
-    {text: 'Data', link: '/adata/' },
-    {text: 'Analysis', link: '/anls/'},
-    {text: 'Resource', link: '/sres/'},
-    {text: 'Guide', link: '/guide/'}
+    {text: 'Home', link: '/en/' },
+    {text: 'Data', link: '/en/adata/' },
+    {text: 'Analysis', link: '/en/anls/'},
+    {text: 'Resource', link: '/en/sres/'},
+    {text: 'Guide', link: '/en/guide/'}
 ]

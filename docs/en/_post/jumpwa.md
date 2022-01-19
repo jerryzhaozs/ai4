@@ -80,7 +80,7 @@ int main(){
 
 注意起始高度为 $0$ 所以排完序只能从最大元素开始输出
 
-``` c++
+```c++
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -109,4 +109,4 @@ int main(){
 	return 0;
 }
 ```
-<vssue/>
+
