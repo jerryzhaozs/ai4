@@ -4,5 +4,5 @@ module.exports=[
     {text: 'Analysis', link: '/en/anls/'},
     {text: 'Resource', link: '/en/sres/'},
     {text: 'Guide', link: '/en/guide/'},
-    {text: '中文', link: '/'}
+    //{text: '中文', link: '/'}
 ]

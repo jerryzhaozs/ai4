@@ -4,5 +4,5 @@ module.exports=[
     {text: '数据分析', link: '/anls/'},
     {text: '软件资源', link: '/sres/'},
     {text: '网站导航', link: '/guide/'},
-    {text: 'English', link: '/en/'}
+    //{text: 'English', link: '/en/'}
 ]
