@@ -2,8 +2,8 @@
 home: true
 heroImage: /hero.png
 heroText: AI4AGR
-tagline: 农业人工智能
-actionText: 开始 →
+tagline: AI for Agriculture
+actionText: 开始
 actionLink: /guide/
 features:
 - title: 领域数据

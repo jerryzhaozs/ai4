@@ -17,79 +17,50 @@ module.exports = {
     // sidebar: 'auto', // 侧边栏配置
     //sidebarDepth: 2, // 侧边栏显示2级
     //displayAllHeaders: true,
-    
     locales: {
-      // 键名是该语言所属的子路径
-      // 作为特例，默认语言可以使用 '/' 作为其路径。
       '/en/': {
         lang: 'en-US',
-        title: 'AI4AGR',
-        description: 'ai4agr',
-        nav:require("./config/nav_en.js"),
-        //sidebar:require("./config/sidebar_en.js"),
+        selectText: 'Languages',
+        label: 'English',
+        ariaLabel: 'Languages',
+        editLinkText: 'Edit this page on GitHub',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
+        algolia: {},
+        nav: require("./config/nav_en.js"),
       },
       '/': {
-        lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-        title: 'AI4AGR',
-        description: '农业人工智能',
-        nav:require("./config/nav.js"),
-        //sidebar:require("./config/sidebar.js"),
-      },
+        lang: 'zh-CN',
+        // 多语言下拉菜单的标题
+        selectText: 'Languages',
+        // 该语言在下拉菜单中的标签
+        label: '简体中文',
+        // 编辑链接文字
+        editLinkText: '在 GitHub 上编辑此页',
+        // Service Worker 的配置
+        serviceWorker: {
+          updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新"
+          }
+        },
+        // 当前 locale 的 algolia docsearch 选项
+        algolia: {},
+        nav: require("./config/nav.js"),
+      }
     },
     sidebar:require("./config/sidebar.js"),
-    // sidebar: {
-    //   '/guide/': [
-    //     {
-    //       title: '导航',   		 // 必要的 GROUP1
-    //       path: '/guide/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-    //       collapsable: false,   // 可选的, 默认值是 true,
-    //       sidebarDepth: 2,      // 可选的, 默认值是 1
-    //       children: [
-    //       //['', '快速了解'],      	/* /guide/ */
-    //       ['guide2', '快速入门']
-    //       ],
-    //       initialOpenGroupIndex: 1
-    //     }
-    //   ],
-    //   '/adata/': [
-    //     {
-    //       title: '数据',   		 // 必要的 GROUP1
-    //       path: '/adata/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-    //       collapsable: false,   // 可选的, 默认值是 true,
-    //       sidebarDepth: 2,      // 可选的, 默认值是 1
-    //       children: [
-    //       //['', '快速了解'],      	/* /guide/ */
-    //       //['guide2', '快速入门']
-    //       ],
-    //       initialOpenGroupIndex: 1
-    //     }
-    //   ],
-    //   '/_post/': [
-    //     {
-    //       title: '介绍',   		 // 必要的 GROUP1
-    //       path: '/_post/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-    //       collapsable: false,   // 可选的, 默认值是 true,
-    //       sidebarDepth: 2,      // 可选的, 默认值是 1
-    //       children: [
-    //       //['', '_post'],      	/* /guide/ */
-    //       ['haha', 'haha'], /* /guide/fastIn.html */
-    //       ['jumpwa', 'jumpwa']
-    //       ],
-    //       initialOpenGroupIndex: 1
-    //     }
-    //   ],
-    //   // fallback
-    //   '/': [
-    //   '',   /* / */
-    //   ]
-    // }
   },
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/en/': {
       selectLanguageName: 'English',
-      lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+      lang: 'en-US',
       title: 'AI4AGR',
       description: 'ai for agriculture'
     },

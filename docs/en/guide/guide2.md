@@ -1,10 +1,11 @@
-# This is No.2 guide page
+---
+title: 导航
+---
 
-``` c++
-#include<iostream>
-using namespace std;
-int main(){
-    cout<<"Hello World!";
-    return 0;
-}
-```
+# 导航
+
+### [领域数据](/adata/)
+
+### [数据分析](/anls/)
+
+### [软件资源](/sres/)
