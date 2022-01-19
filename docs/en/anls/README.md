@@ -1,6 +1,5 @@
 ---
 title: 数据分析
-sidebar: false
 ---
 
 ## 数据分析

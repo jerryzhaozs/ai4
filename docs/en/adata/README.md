@@ -1,19 +1,20 @@
 ---
 title: 领域数据
-sidebar: false
+sidebarStyle: {
+    width: '5rem'
+    }
 ---
-
 ## 领域数据
 
 ### 生态
 
 ### 经济
 
-[GDP数据](http://www.ai4agr.com/) [市场数据](http://www.ai4agr.com/)
+[GDP数据](/) [市场数据](/)
 
 ### 地质
 
-[土壤分](http://www.ai4agr.com/) [矿物](http://www.ai4agr.com/) [地形](http://www.ai4agr.com/) 
+[土壤分](/) [矿物](/) [地形](/)
 
 ### 气象
 
@@ -22,3 +23,5 @@ sidebar: false
 ### 水文
 
 ### 农业
+
+<Vssue/>

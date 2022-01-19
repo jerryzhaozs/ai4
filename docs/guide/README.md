@@ -1,14 +1,11 @@
 ---
 title: 导航
-sidebar: false
 ---
 
-## 导航
+# 导航
 
-### [领域数据](http://www.ai4agr.com/)
+### [领域数据](/adata/)
 
-### [数据分析](http://www.ai4agr.com/)
+### [数据分析](/anls/)
 
-### [软件资源](http://www.ai4agr.com/)
-
-<Vssue />
+### [软件资源](/sres/)

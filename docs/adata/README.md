@@ -1,11 +1,9 @@
 ---
 title: 领域数据
-sidebar: auto
 sidebarStyle: {
     width: '5rem'
     }
 ---
-[TOC]
 ## 领域数据
 
 ### 生态
