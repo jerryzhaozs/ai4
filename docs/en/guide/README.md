@@ -1,11 +1,18 @@
 ---
-title: 导航
+title: Guide
 ---
 
-# 导航
+## 导航
 
-### [领域数据](/adata/)
+### [Resource](/en/rsrc/)
 
-### [数据分析](/anls/)
+### [Research](/en/res/)
 
-### [软件资源](/sres/)
+### [Material](/en/mater/)
+
+#### [AI Blog](/)
+#### [Data set](/)
+#### [Platform / Framework](/)
+#### [Programming](/)
+#### [Map](/)
+#### [Analysis](/)

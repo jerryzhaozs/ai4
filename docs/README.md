@@ -3,7 +3,7 @@ home: true
 heroImage: /hero.png
 heroText: AI4AGR
 tagline: AI for Agriculture
-actionText: 开始
+actionText: 开 始
 actionLink: /guide/
 features:
 - title: 领域数据
@@ -13,7 +13,7 @@ features:
 - title: 软件资源
   details: 汇总软件等资源
 # footer: <a href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a>
-footer: Copyright@AI4AGR.COM 豫ICP备2022000668号-1 
+footer: Copyright © AI4AGR.COM 豫ICP备2022000668号-1 
 ---
 
 <center><a style="color:white" href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a></center>

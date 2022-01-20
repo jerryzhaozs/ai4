@@ -1,11 +1,10 @@
----
-title: 导航
----
+# This is No.2 guide page
 
-# 导航
-
-### [领域数据](/adata/)
-
-### [数据分析](/anls/)
-
-### [软件资源](/sres/)
+``` c++
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Hello World!";
+    return 0;
+}
+```
