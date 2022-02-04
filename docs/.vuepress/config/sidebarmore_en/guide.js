@@ -8,7 +8,7 @@ module.exports = [
         children:[
             {title: 'AI Blog',path:'/guide/aiblog/'},
             {title: 'Data set',path:'/guide/dataset/'},
-            {title: 'Platform / Framework',path:'/'},
+            {title: 'Platform / Framework',path:'/guide/aiframe/'},
             {title: 'Programming',path:'/'},
             {title: 'Map',path:'/'},
             {title: 'Analysis',path:'/'},
