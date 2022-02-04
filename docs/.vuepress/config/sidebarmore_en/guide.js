@@ -6,8 +6,8 @@ module.exports = [
         sidebarDepth: 2,      // 可选的, 默认值是 1
         initialOpenGroupIndex: 1,
         children:[
-            {title: 'AI Blog',path:'/'},
-            {title: 'Data set',path:'/'},
+            {title: 'AI Blog',path:'/guide/aiblog'},
+            {title: 'Data set',path:'/guide/dataset'},
             {title: 'Platform / Framework',path:'/'},
             {title: 'Programming',path:'/'},
             {title: 'Map',path:'/'},

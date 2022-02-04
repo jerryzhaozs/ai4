@@ -9,6 +9,9 @@
   <body>
     <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
     <div id="main" style="width: 600px;height:400px;"></div>
+    <div>
+    	<iframe src="http://www.aureagroup.com.au" width="48%" height="400px" name="_if"></iframe>
+    </div>
     <script type="text/javascript">
       // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById('main'));
@@ -34,8 +37,7 @@
       };
       myChart.setOption(option);
     </script>
-  </body>
-</html>
+  </body></html>
 
 # 图表
 1
