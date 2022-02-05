@@ -7,7 +7,6 @@ title : research
 <hehe/>
 hi
 
-<!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8" />
@@ -20,10 +19,9 @@ hi
     <div id="main" style="width: 600px;height:400px;"></div>
     <script type="text/html">
       // 基于准备好的dom，初始化echarts实例
-      <code>
       var myChart = echarts.init(document.getElementById('main'));
       const xhr = new XMLHttpRequest()// 创建对象
-      xhr.responseType="json"
+      xhr.responseType='json'
       xhr.open('GET','http://ai4agr.com:8000/txt-server')
       xhr.send()
       xhr.onreadystatechange=function(){
@@ -65,7 +63,6 @@ hi
           }
         }
       }
-      </code>
     </script>
   </body>
 </html>
