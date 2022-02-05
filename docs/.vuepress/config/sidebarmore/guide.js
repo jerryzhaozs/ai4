@@ -9,9 +9,8 @@ module.exports = [
             {title: 'AI Blog',path:'/guide/aiblog/'},
             {title: '数据集',path:'/guide/dataset/'},
             {title: '平台/框架',path:'/guide/aiframe/'},
-            {title: '编程',path:'/'},
-            {title: '地图类',path:'/'},
-            {title: '大数据分析',path:'/'},
+            {title: '地图类',path:'/guide/map/'},
+            {title: '数据可视化',path:'/guide/datavue/'},
         ]
     }
 ]

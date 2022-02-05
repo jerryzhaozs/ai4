@@ -9,9 +9,8 @@ module.exports = [
             {title: 'AI Blog',path:'/guide/aiblog/'},
             {title: 'Data set',path:'/guide/dataset/'},
             {title: 'Platform / Framework',path:'/guide/aiframe/'},
-            {title: 'Programming',path:'/'},
-            {title: 'Map',path:'/'},
-            {title: 'Analysis',path:'/'},
+            {title: 'Map',path:'/guide/map/'},
+            {title: 'Data visualization',path:'/guide/datavue/'},
         ]
     }
 ]
