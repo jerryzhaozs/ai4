@@ -4,7 +4,11 @@ title : research
 
 ## research page
 
-<html>
+<hehe/>
+hi
+
+
+  <html>
   <head>
     <meta charset="utf-8" />
     <title>ECharts</title>
@@ -12,10 +16,12 @@ title : research
     <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.2.2/echarts.common.js"></script>
   </head>
   <body>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
     <div id="main" style="width: 600px;height:400px;"></div>
     <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById('main'));
-      const xhr = new XMLHttpRequest()
+      const xhr = new XMLHttpRequest()// 创建对象
       xhr.responseType="json"
       xhr.open('GET','http://ai4agr.com:8000/txt-server')
       xhr.send()
