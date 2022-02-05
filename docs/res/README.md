@@ -7,7 +7,7 @@ title : research
 <hehe/>
 hi
 
-  <html>
+<html>
   <head>
     <meta charset="utf-8" />
     <title>ECharts</title>
@@ -17,7 +17,7 @@ hi
   <body>
     <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
     <div id="main" style="width: 600px;height:400px;"></div>
-    <script type="text/html">
+    <script type="text/javascript">
       // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById('main'));
       const xhr = new XMLHttpRequest()// 创建对象
