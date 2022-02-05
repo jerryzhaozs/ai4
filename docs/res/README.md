@@ -22,7 +22,7 @@ hi
       // 基于准备好的dom，初始化echarts实例
       var myChart = echarts.init(document.getElementById('main'));
       const xhr = new XMLHttpRequest()// 创建对象
-      xhr.responseType=\"json\"
+      xhr.responseType=&quot;json&quot;
       xhr.open('GET','http://ai4agr.com:8000/txt-server')
       xhr.send()
       xhr.onreadystatechange=function(){
