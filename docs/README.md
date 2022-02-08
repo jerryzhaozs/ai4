@@ -6,13 +6,12 @@ tagline: AI for Agriculture
 actionText: 开 始
 actionLink: /guide/
 features:
-- title: 领域数据
-  details: 收集多个领域数据以用于AI研究，解决资源混杂，数据难以全面收集问题
-- title: 数据分析
-  details: AI研究方法过程和成果，探索AI在农业方面的应用
-- title: 软件资源
-  details: 汇总软件等资源
-# footer: <a href="https://beian.miit.gov.cn/">豫ICP备2022000668号-1</a>
+- title: 数据及应用
+  details: 天气、农业、地信、环境等多领域数据收集和使用说明 
+- title: AI4AGR
+  details: 数据的分析和展示，学习AI在防灾减灾方面的知识
+- title: 学习资源
+  details: 整理学习资源，尝试做好知识管理
 footer: Copyright © AI4AGR.COM 豫ICP备2022000668号-1 
 ---
 

@@ -1,18 +1,19 @@
 ---
 title: Guide
+sidebar: false
 ---
 
-## 导航
+# Guide
 
 ### [Resource](/en/rsrc/)
 
 ### [Research](/en/res/)
 
-### [Material](/en/mater/)
+### [About](/en/about/)
 
-#### [AI Blog](/)
-#### [Data set](/)
-#### [Platform / Framework](/)
-#### [Programming](/)
-#### [Map](/)
-#### [Analysis](/)
+#### [AI Blog](/en/guide/aiblog/)
+#### [AI Frame](/en/guide/aiframe/)
+#### [Dataset](/en/guide/dataset/)
+#### [Data visualization](/en/guide/datavue/)
+#### [Development resources](/en/guide/devrsrc/)
+#### [Map](/en/guide/map/)

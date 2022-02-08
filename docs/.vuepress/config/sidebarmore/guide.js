@@ -1,6 +1,6 @@
 module.exports = [
     {
-        title: '网站导航',     // 必要的 GROUP1
+        title: '导 航',     // 必要的 GROUP1
         path: '/guide/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false,   // 可选的, 默认值是 true,
         sidebarDepth: 2,      // 可选的, 默认值是 1
@@ -11,6 +11,7 @@ module.exports = [
             {title: '平台/框架',path:'/guide/aiframe/'},
             {title: '地图类',path:'/guide/map/'},
             {title: '数据可视化',path:'/guide/datavue/'},
+            {title: '开发资源',path:'/guide/devrsrc/'},
         ]
     }
 ]

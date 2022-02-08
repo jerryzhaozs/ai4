@@ -11,6 +11,7 @@ module.exports = [
             {title: 'Platform / Framework',path:'/guide/aiframe/'},
             {title: 'Map',path:'/guide/map/'},
             {title: 'Data visualization',path:'/guide/datavue/'},
+            {title: 'Development resources',path:'/guide/devrsrc/'},
         ]
     }
 ]

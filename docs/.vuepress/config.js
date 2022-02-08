@@ -62,7 +62,7 @@ module.exports = {
       selectLanguageName: 'English',
       lang: 'en-US',
       title: 'AI4AGR',
-      description: 'ai for agriculture'
+      description: 'AI for Agriculture'
     },
     '/': {
       selectLanguageName: '简体中文',

@@ -1,5 +1,7 @@
 ---
-title : research
+title : Research
 ---
 
 ## research page
+
+here

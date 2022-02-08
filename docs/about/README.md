@@ -1,5 +1,14 @@
 ---
-title: about
+title: About
+sidebar: false
 ---
 
-## about page
+## About
+
+### [About AI4AGR](/about/info)
+
+### [Statement](/about/statement)
+
+### [Timeline](/about/timeline)
+
+### [Development Resources](/about/devrsrc/)

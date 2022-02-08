@@ -6,11 +6,11 @@ module.exports = [
         sidebarDepth: 2,      // 可选的, 默认值是 1
         initialOpenGroupIndex: 1,
         children:[
-            {title: '按地区查看',path:'/'},
-            {title: '风险预警',path:'/'},
-            {title: '气候与干旱',path:'/'},
-            {title: '自动报告',path:'/'},
-            {title: '方法库',path:'/'},
+            {title: '按地区查看',path:'/res/region/'},
+            {title: '风险预警',path:'/res/dprediction/'},
+            {title: '气候',path:'/res/climate/'},
+            {title: '自动报告',path:'/res/report/'},
+            {title: '方法库',path:'/res/meth/'},
         ]
     }
 ]
