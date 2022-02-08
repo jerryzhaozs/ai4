@@ -12,7 +12,3 @@ title: Statment
 - The environment of this website may be unstable. If there is any access error, please wait for some time to access it
 
 - Users must access this site legally
-
-Contact Us
-
-Email: ai4agr@126.com

@@ -1,6 +1,5 @@
 ---
 title: 导 航
-sidebar: false
 ---
 
 # 导 航

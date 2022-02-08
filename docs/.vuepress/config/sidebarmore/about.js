@@ -6,8 +6,8 @@ module.exports = [
         sidebarDepth: 2,      // 可选的, 默认值是 1
         initialOpenGroupIndex: 1,
         children:[
-            {title: '网站介绍',path:'/about/info'},
-            {title: '网站声明',path:'/about/statement'},
+            {title: '网站介绍',path:'/about/info/'},
+            {title: '网站声明',path:'/about/statement/'},
             {title: '时间线',path:'/about/timeline/'},
             {title: '开发资源',path:'/about/devrsrc/'},
         ]

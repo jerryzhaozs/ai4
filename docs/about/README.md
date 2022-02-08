@@ -1,14 +1,13 @@
 ---
-title: About
-sidebar: false
+title: 关 于
 ---
 
-## About
+## 关 于
 
-### [About AI4AGR](/about/info)
+### [关于本站](/about/info)
 
-### [Statement](/about/statement)
+### [声 明](/about/statement)
 
-### [Timeline](/about/timeline)
+### [时间线](/about/timeline)
 
-### [Development Resources](/about/devrsrc/)
+### [开发资源](/about/devrsrc/)

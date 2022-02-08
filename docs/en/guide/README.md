@@ -1,6 +1,5 @@
 ---
 title: Guide
-sidebar: false
 ---
 
 # Guide
