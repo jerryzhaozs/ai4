@@ -1,16 +1,33 @@
 module.exports = [
-    {
-        title: 'Research',   		 // 必要的 GROUP1
-        path: '/en/res/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false,   // 可选的, 默认值是 true,
-        sidebarDepth: 2,      // 可选的, 默认值是 1
-        initialOpenGroupIndex: 1,
-        children:[
-            {title: 'Region',path:'/en/res/region/'},
-            {title: 'Disaster prediction',path:'/en/res/dprediction/'},
-            {title: 'Climate',path:'/en/res/climate/'},
-            {title: 'Auto Report',path:'/en/res/report/'},
-            {title: 'Methods',path:'/en/res/meth/'},
+  {
+    title: 'Research',
+    path: '/en/res/',
+    collapsable: false,
+    sidebarDepth: 1,
+    displayAllHeaders: true,
+    initialOpenGroupIndex: 1,
+    children: [
+      {
+        title: 'Crop yield', path: '/en/res/crop/',
+        children: [
+          { title: 'Wheat', path: '/en/res/crop/wheat/' },
+          { title: 'Rice', path: '/en/res/crop/rice/' },
+          { title: 'Maize', path: '/en/res/crop/maize/' },
+          { title: 'Oats', path: '/en/res/crop/oat/' },
+          { title: 'Rye', path: '/en/res/crop/rye/' },
+          { title: 'Sorghum', path: '/en/res/crop/sorghum/' },
+          { title: 'Rapeseed', path: '/en/res/crop/rapeseed/' },
+          { title: 'Sunflower seed', path: '/en/res/crop/sunflowerseed/' },
+          { title: 'Soybean', path: '/en/res/crop/soybean/' },
+          { title: 'Cotton', path: '/en/res/crop/cotton/' },
+          { title: 'Sugarcane', path: '/en/res/crop/sugarcane/' },
+          { title: 'Sugarbeet', path: '/en/res/crop/sugarbeet/' },
         ]
-    }
+      },
+      { title: 'Disaster prediction', path: '/en/res/dprediction/' },
+      { title: 'Climate', path: '/en/res/climate/' },
+      { title: 'Auto Report', path: '/en/res/report/' },
+      { title: 'Methods', path: '/en/res/meth/' },
+    ]
+  }
 ]
