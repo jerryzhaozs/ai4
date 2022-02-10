@@ -11,7 +11,14 @@ title: About
 目标：学习AI在农业及气候灾害预防方面的应用，建立相关知识和数据地图，了解防灾减灾相关技术与应用
 
 起因：经历郑州720暴雨后，对自然灾害深有感触，开始学习气候、自然灾害等防灾减灾知识，在课余时间建立此站，用于学习交流
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+***
 
 #### 网站开发 
 
@@ -23,7 +30,7 @@ title: About
 <a href="https://github.com/jerryzhaozs" target="-blank" title="源码家园">
     <img src="https://avatars.githubusercontent.com/u/51824881?v=4" width="90px">
 </a>
-
+&nbsp;
 
 <a href="https://github.com/oar-fish" target="-blank" title="源码家园">
     <img src="https://avatars.githubusercontent.com/u/99232709?v=4" width="90px">

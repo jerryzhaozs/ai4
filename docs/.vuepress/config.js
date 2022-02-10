@@ -12,7 +12,7 @@ module.exports = {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
-    search: false,
+    // search: false,
     repo: 'https://github.com/jerryzhaozs/ai4',
     repoLabel: 'Github',
     //nav:require("./config/nav.js"),

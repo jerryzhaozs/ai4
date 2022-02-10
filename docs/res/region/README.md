@@ -1,5 +1,0 @@
----
-title: Region
----
-
-### Region Updating

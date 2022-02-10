@@ -8,7 +8,7 @@ module.exports = [
     initialOpenGroupIndex: 1,
     children: [
       {
-        title: 'Crop yield', path: '/en/res/crop/',
+        title: 'Crop Production', path: '/en/res/crop/',
         children: [
           { title: 'Wheat', path: '/en/res/crop/wheat/' },
           { title: 'Rice', path: '/en/res/crop/rice/' },

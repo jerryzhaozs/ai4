@@ -3,6 +3,6 @@ module.exports=[
     {text: 'Research', link: '/en/res/'},
     {text: 'Resource', link: '/en/rsrc/' },
     //{text: 'Material',link: '/en/mater/'},
-    {text: 'Guide',link: '/en/guide/'},
+    {text: 'Directory',link: '/en/guide/'},
     {text: 'About',link: '/en/about/'},
 ]
