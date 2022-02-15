@@ -13,7 +13,7 @@
 
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="echarts.min.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js">
   
 const myChart2 = echarts.init(document.getElementById('container2'));
 const xhr2 = new XMLHttpRequest()// 创建对象
