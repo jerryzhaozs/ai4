@@ -14,17 +14,15 @@
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="echarts.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js">
-  
-const myChart2 = echarts.init(document.getElementById('container2'));
+  const myChart2 = echarts.init(document.getElementById('container2'));
 const xhr2 = new XMLHttpRequest()// 创建对象
 xhr2.responseType="json"
-xhr2.open('GET','http://localhost:8000/fao/totcrop/pro/worldtop10')
+xhr2.open('GET','http://ai4agr.com:8000/fao/totcrop/pro/worldtop10')
 xhr2.send()
 xhr2.onreadystatechange=function(){
   if(xhr2.readyState===4){
     if(xhr2.status>=200&&xhr2.status<300){
       const noww=xhr2.response
-
       var seriesE=[]
       for(key in noww){
         var seriesN={
@@ -40,7 +38,6 @@ xhr2.onreadystatechange=function(){
         seriesE.push(seriesN)
       }
       seriesE.sort((b,a)=>{return b.data[b.data.length-1]-a.data[a.data.length-1]})
-
       var option2 = {
         title: {
           text: 'Total Production',
@@ -78,22 +75,19 @@ xhr2.onreadystatechange=function(){
         },
         series: seriesE
       };
-
       myChart2.setOption(option2);
     }
   }
 }
-
 const myChart3 = echarts.init(document.getElementById('container3'));
 const xhr3 = new XMLHttpRequest()// 创建对象
 xhr3.responseType="json"
-xhr3.open('GET','http://localhost:8000/fao/totpop/worldtop6')
+xhr3.open('GET','http://ai4agr.com:8000/fao/totpop/worldtop6')
 xhr3.send()
 xhr3.onreadystatechange=function(){
   if(xhr3.readyState===4){
     if(xhr3.status>=200&&xhr3.status<300){
       const noww=xhr3.response
-
       var seriesE=[]
       for(key in noww){
         var seriesN={
@@ -116,7 +110,6 @@ xhr3.onreadystatechange=function(){
       }
       seriesE.sort((a,b)=>{return b.data[b.data.length-1]-a.data[a.data.length-1]})
       seriesE.push(seriesO)
-
       var option3 = {
         title: {
           text: 'World Population (FAO)',
@@ -154,23 +147,20 @@ xhr3.onreadystatechange=function(){
         },
         series: seriesE
       };
-
       myChart3.setOption(option3);
     }
   }
 }
-
 const myChart4 = echarts.init(document.getElementById('container4'));
 const xhr4 = new XMLHttpRequest()// 创建对象
 xhr4.responseType="json"
-xhr4.open('GET','http://localhost:8000/wcde/totpop/worldtop6')
+xhr4.open('GET','http://ai4agr.com:8000/wcde/totpop/worldtop6')
 xhr4.send()
 xhr4.onreadystatechange=function(){
   if(xhr4.readyState===4){
     if(xhr4.status>=200&&xhr4.status<300){
       const noww=xhr4.response
       console.log(noww)
-
       var seriesE=[]
       for(key in noww){
         var seriesN={
@@ -193,7 +183,6 @@ xhr4.onreadystatechange=function(){
         data: noww['World']
       }
       seriesE.push(seriesO)
-
       var option4 = {
         title: {
           text: 'World Population ',
@@ -231,7 +220,6 @@ xhr4.onreadystatechange=function(){
         },
         series: seriesE
       };
-
       myChart4.setOption(option4);
     }
   }
